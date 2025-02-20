@@ -1,9 +1,10 @@
 # Fake News Knowledge Obsolescence Dataset
 
-The dataset `Fake_News_KO.csv` is a combination of multiple datasets that we plan to use for experiments on combating Knowledge Obsolescence in Fake News Detections. The majority of articles come between 2016 and 2018. This dataset, specifically combines two sources:
+The dataset `Fake_News_KO.csv` is a combination of multiple datasets that we have either explored or plan to use for experiments on combating Knowledge Obsolescence in Fake News Detections. The majority of articles come between 2016 and 2018. We have explored and considered the following datasets:
 
-- **ISOT Fake NewsDataset:** Dataset containing real and fake news from different subject categories.
-- **FakeNewsNet Dataset:** Real and Fake News from gossipcop and politifact (fact checking websites)
+- **FakeNewsNet Dataset:** Real and Fake News from gossipcop and politifact (fact checking websites). [Original FakeNewsNet Paper](https://arxiv.org/abs/1809.01286)
+- **ISOT Fake NewsDataset:** Dataset containing real and fake news from different subject categories. We plan to incorporate this dataset in the future if more data is needed. [ISOT dataset](https://www.kaggle.com/datasets/emineyetm/fake-news-detection-datasets)
+- **NELA:**- We initially planned to use NELA, but after reading the [NELA-2020 paper](https://arxiv.org/pdf/2102.04567), we found the data was created by simply labeling articles as reliable or not depending on the source that made them. We believe this is a flawed approach since unreliable sources can still contain real news at times.
 
 In order to properly combine these datasets, preprocessing was done to collect dates, drop columns, and format entries appropriately. The specific code to perform these operations can be found in the following python files:
 
@@ -13,7 +14,7 @@ In order to properly combine these datasets, preprocessing was done to collect d
 
 
 Update:
-Note, for initial experimentation, we used `FakeNewsNet_combined.csv`. This is because the labeling for the ISOT dataset is done by identifying reliable vs unreliable sources which makes the dataset flawed. We think this because we got a high accurracy (94%) with the combined dataset, and we believe that was the reason why. We switched to `FakeNewsNet_combined.csv` and obtained 84 percent accuracy which you can see from the model_training folder.
+Note, for initial experimentation, we used `FakeNewsNet_combined.csv`. This is because the labeling for the ISOT dataset is based only on the source of the news rather than the content. When we ran our initial BERT classifier with ISOT data included, we achieved unrealistically high (>95%) accuracies, which we attribute to the unrealistic labels of the data. We switched to `FakeNewsNet_combined.csv` and obtained 84 percent accuracy which you can see from the model_training folder. FakeNewsNet creates labels based on per-article reviews rather than just the credibility of the source 
   
 ## Dataset Structure
 
