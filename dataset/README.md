@@ -1,6 +1,6 @@
 # Fake News Knowledge Obsolescence Dataset
 
-The dataset `Fake_News_KO.csv` is a combination of multiple datasets that we use for experiments on combating Knowledge Obsolescence in Fake News Detections. The majority of articles come between 2016 and 2018. This dataset, specifically combines two sources:
+The dataset `Fake_News_KO.csv` is a combination of multiple datasets that we plan to use for experiments on combating Knowledge Obsolescence in Fake News Detections. The majority of articles come between 2016 and 2018. This dataset, specifically combines two sources:
 
 - **ISOT Fake NewsDataset:** Dataset containing real and fake news from different subject categories.
 - **FakeNewsNet Dataset:** Real and Fake News from gossipcop and politifact (fact checking websites)
@@ -10,6 +10,10 @@ In order to properly combine these datasets, preprocessing was done to collect d
 - **`date_scraper_from_url.py`:** Follows news article URLs to obtain dates for articles from FakeNewsNet.
 - **`ISOT_FakeNews_preprocessing.py`:** Filters data and removes unecessary columns from the ISOT dataset.
 - **`combine_csvs.py`:** Helper file to combine csv's with the Label, Title, Date format to create our overall dataset.
+
+
+Update:
+Note, for initial experimentation, we used `FakeNewsNet_combined.csv`. This is because the labeling for the ISOT dataset is done by identifying reliable vs unreliable sources which makes the dataset flawed. We think this because we got a high accurracy (94%) with the combined dataset, and we believe that was the reason why. We switched to `FakeNewsNet_combined.csv` and obtained 84 percent accuracy which you can see from the model_training folder.
   
 ## Dataset Structure
 
