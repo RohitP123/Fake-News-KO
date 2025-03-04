@@ -62,3 +62,32 @@ The following shows some example rows of our dataset.
   journal={arXiv preprint arXiv:1712.07709},
   year={2017}
 }
+
+@article{xu2024enhanced,
+  author={Xu, Cheng and Kechadi, M-Tahar},
+  journal={IEEE Access}, 
+  title={An Enhanced Fake News Detection System With Fuzzy Deep Learning}, 
+  year={2024},
+  volume={12},
+  number={},
+  pages={88006-88021},
+  keywords={Fake news;Fuzzy logic;Benchmark testing;Social networking (online);Deep learning;Task analysis;Natural language processing;Classification algorithms;Deep learning;fuzzy deep learning;fake news;fake news detection;fact-checking;NLP;classification systems;benchmark},
+  url={https://doi.org/10.1109/ACCESS.2024.3418340},
+  doi={10.1109/ACCESS.2024.3418340}}
+
+@inproceedings{xu2023fuzzy,
+   author = {Xu, Cheng and Kechadi, M-Tahar},
+   title = {Fuzzy Deep Hybrid Network for Fake News Detection},
+   year = {2023},
+   isbn = {9798400708916},
+   publisher = {Association for Computing Machinery},
+   address = {New York, NY, USA},
+   url = {https://doi.org/10.1145/3628797.3628971},
+   doi = {10.1145/3628797.3628971},
+   booktitle = {Proceedings of the 12th International Symposium on Information and Communication Technology},
+   pages = {118–125},
+   numpages = {8},
+   keywords = {Classification Systems, Deep Learning, Hybrid Learning Models, Fuzzy Deep Learning, Fake News Detection},
+   location = {<conf-loc>, <city>Ho Chi Minh</city>, <country>Vietnam</country>, </conf-loc>},
+   series = {SOICT '23}
+}
