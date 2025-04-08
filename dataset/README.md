@@ -13,6 +13,13 @@ In order to properly combine these datasets, preprocessing was done to collect d
 - **`ISOT_FakeNews_preprocessing.py`:** Filters data and removes unecessary columns from the ISOT dataset.
 - **`combine_csvs.py`:** Helper file to combine csv's with the Label, Title, Date format to create our overall dataset.
 
+In order to test our models on live data, we have created scripts to both load live fact-check labeled data from the [Google Fact Check Tools Api](https://developers.google.com/fact-check/tools/api/) as well as collecting reputable sources for our retrieveal database from [World News Api](https://worldnewsapi.com/docs/). All scripts and sample data are contained in the liveDataScraping/ folder
+- **`WorldNewsAPIFactualData.ipynb`:** Collect relevant headlines and summaries for retrieval database from WorldNewsApi, currently we support BBC news only.
+- **`bbc_news_sample_data.csv`:** Sample data collected from WorldNewsAPIFactualData.ipynb.
+- **`liveDataGoogleApi.ipynb`:** Collect fact-checked news headlines from the Google Fact Check Tools Api.
+- **`google_api_sample_livedata.csv`:** Sample data collected from liveDataGoogleApi.ipynb.
+
+
 
 Update:
 Note, for initial experimentation, we used `FakeNewsNet_combined.csv`. This is because the labeling for the ISOT dataset is based only on the source of the news rather than the content. When we ran our initial BERT classifier with ISOT data included, we achieved unrealistically high (>95%) accuracies, which we attribute to the unrealistic labels of the data. We switched to `FakeNewsNet_combined.csv` and obtained 84 percent accuracy which you can see from the model_training folder. FakeNewsNet creates labels based on per-article reviews rather than just the credibility of the source.
