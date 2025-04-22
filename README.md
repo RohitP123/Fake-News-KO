@@ -25,7 +25,7 @@ The dataset csv's required for running the following 3 notebooks are:
   - Download the headlines.csv from the kaggle dataset page (will be used for retrieval)
 
 ### Creating our RAFT Model with Semantic Similarity: KO_BERT_RAG_Faiss(headline + distance).ipynb
-1. Download `KO_BERT_RAG_Faiss(headline + distance).ipynb` and upload it to Google Colab
+1. Download `KO_BERT_RAG_Faiss(headline + distance).ipynb` and upload it to Google Colab. Using Colab, there is no need to manually download dependencies. 
 2. Upload the Liar2 csv dataset to the google colab
 3. Select a GPU as runtime type (eg. T4) (you can run on CPU, but we heavily recommend using a GPU as these are compute intesive tasks)
 4. Run each cell up until the Faiss Index Creations Step
