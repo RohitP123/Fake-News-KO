@@ -8,7 +8,7 @@ A retrieval‑augmented fine‑tuning (RAFT) approach built on BERT to detect fa
 
 ## Running Our Jupyter Notebooks
 
-You can run the jupyter notebooks locally or on Google Colab. We recommend Google Colab for ease of dependency installation. Please set aside a couple hours for each experiment since downloading the files and training models is a time consuming process.
+You can run the jupyter notebooks locally or on Google Colab. We recommend Google Colab for ease of dependency installation.
 
 ### 1. Clone the repo
 ```bash
@@ -18,7 +18,7 @@ If running locally, you will need to manually download the dependencies listed a
 
 ## Demo (on Google Collab)
 
-Below we describe running some of our Jupyter Notebooks to replicate our models and findings.
+Below we describe running some of our Jupyter Notebooks to replicate our models and findings. Please set aside a couple hours for each experiment since downloading the files and training models is a time consuming process.
 
 The dataset csv's required for running the following 3 notebooks are:
 - Liar2_combined.csv
