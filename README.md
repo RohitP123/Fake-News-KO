@@ -69,3 +69,11 @@ The dataset csv's required for running the following 3 notebooks are:
     - These cells include creating the Faiss Index from live_data_retrieval_headlines.csv, and evaluation the 3 uploaded models and generating their classification report on the live data
 6. You will see evaluation metrics of the three models uploaded
 
+### Live Data Experiments: Zero-shot LLM Inference 
+1. For this notebook we need a different CSV that contains scraped headlines
+2. Download the [politifact-sample.csv](https://github.com/RohitP123/Fake-News-KO/blob/main/dataset/liveDataScraping/politifact-sample.csv) and [live_data_retrieval_headlines.csv](https://github.com/RohitP123/Fake-News-KO/blob/main/dataset/liveDataScraping/live_data_retrieval_headlines.csv) from dataset/liveDataScraping in the Repository
+    - These are respectively used for the test dataset and the Faiss Index for retrieval
+3. Upload the `KO_LLM_Classifier.ipynb` notebook to google colab and upload the two csvs as well
+4. Since we load a Llama 3 8B model from hugging face, you must make a [Hugging Face account](https://huggingface.co/) and [request acess to the Llama 3 8b model](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/discussions/142).
+    - Make sure to include "Georgia Tech" as affliation when requesting access to the model via Hugging Face
+5. Run all cells in the notebook, feel free to change the prompts to experiment 
