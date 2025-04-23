@@ -31,7 +31,7 @@ The dataset csv's required for running the following 3 notebooks are:
 2. Upload the Liar2 csv dataset to the google colab
 3. Select a GPU as runtime type (eg. T4) (you can run on CPU, but we heavily recommend using a GPU as these are compute intesive tasks)
 4. Run each cell up until the Faiss Index Creations Step
-5. If first time running, you will need to create the Faiss Indexes for retrieval in the RAFT model (If you have Faiss Indexes downloaded, skip to step 6)
+5. If first time running, you will need to create the Faiss Indexes for retrieval in the RAFT model or you can download the `faiss_indexes_new.zip` and `faiss_headlines_new.pkl` from this [OneDrive](https://gtvault-my.sharepoint.com/:f:/g/personal/rpatil73_gatech_edu/EqOQFqN11yJLt9gyjwH51a4BOELilGgtITOHWIdjZb8JRg?e=soyFko) (If you have Faiss Indexes downloaded, skip to step 6)
     - Ignore the Faiss Index Creation Section
     - In order to create Faiss Indexes, refer to the following file `Enhanced_Faiss_Index.ipynb` located in the Faiss folder [here](https://github.com/RohitP123/Fake-News-KO/blob/main/Faiss/Enhanced_Faiss_Index.ipynb)
       - This jupyter notebook allows for the creation of Faiss Indexes with the enhanced dataset that you downloaded from Kaggle
