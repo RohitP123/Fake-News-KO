@@ -8,7 +8,7 @@ A retrieval‑augmented fine‑tuning (RAFT) approach built on BERT to detect fa
 
 ## Running Our Jupyter Notebooks
 
-You can run the jupyter notebooks locally or on Google Colab. We recommend Google Colab for ease of dependency installation.
+You can run the jupyter notebooks locally or on Google Colab. We recommend Google Colab for ease of dependency installation. Please set aside a couple hours for each experiment since downloading the files and training models is a time consuming process.
 
 ### 1. Clone the repo
 ```bash
