@@ -65,6 +65,7 @@ The dataset csv's required for running the following 3 notebooks are:
 1. For this notebook we need a different CSV that contains scraped headlines
 2. Download the [politifact-sample.csv](https://github.com/RohitP123/Fake-News-KO/blob/main/dataset/liveDataScraping/politifact-sample.csv) and [live_data_retrieval_headlines.csv](https://github.com/RohitP123/Fake-News-KO/blob/main/dataset/liveDataScraping/live_data_retrieval_headlines.csv) from dataset/liveDataScraping in the Repository
     - These are respectively used for the test dataset and the Faiss Index for retrieval
+      - To retrieve the Faiss Index, instead of runnning the cell for creating it, you can download `faiss_live_headlines.index` from this [OneDrive](https://gtvault-my.sharepoint.com/my?id=%2Fpersonal%2Frpatil73%5Fgatech%5Fedu%2FDocuments%2FCS6365%2DCombating%20KO%20with%20RAFT).
 3. Upload the `LiveData_Experiment_WorldNewsAPI.ipynb` notebook to google colab and upload the two csvs as well
 4. Also upload Continual Learning Baseline Period Model, CL period 4 model, and RAFT period 4 model which you may have downloaded from previous notebooks mentioned
 5. Run all cells in the notebook
