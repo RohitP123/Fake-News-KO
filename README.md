@@ -2,6 +2,8 @@
 
 A retrieval‑augmented fine‑tuning (RAFT) approach built on BERT to detect fake news under concept drift. We compare standard continual‑learning (CL) models against RAFT variants that ground their predictions in up‑to‑date real‑world headlines via FAISS. We also experiment with Live Data, comparing RAFT approaches, and investigate the importance of FAISS Indexes.
 
+[Video presentation](https://www.youtube.com/watch?v=iJRgj5-gUAc) of our project
+
 ---
 
 ## Running Our Jupyter Notebooks
